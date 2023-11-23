@@ -1,6 +1,6 @@
 # dependency-hell-talk
 
-
+This repository contains the slides and demo run book for my talk "Raus aus der Dependency-Hölle, ... zumindest ein bißchen", that I gave at "Legacy & Innovation Meetup" in Hamburg on 22nd November 2023.
 
 ## Runbook
 
@@ -9,7 +9,7 @@
 Demo project: 
 
 ´´´´shell
-cd demo-project
+cd maintenance-demo
 ´´´´
 
 **Preparations:**
@@ -21,8 +21,7 @@ git push --force
 ´´´´
 2. Delete `Dependency Dashboard` issue in the demo project
 3. Rename the old ` Configure Renovate` PR.
-2. Remove the line `prCommitsPerRunLimit : "5"` in `.renovate.json`
-3. Create a valid API Token in your GitHub Profile `Developer Setting -> Personal Access token`
+4. Create a valid API Token in your GitHub Profile `Developer Setting -> Personal Access token`
 
 
 **Demo steps:**
@@ -51,7 +50,7 @@ Renovate Presets: https://docs.renovatebot.com/presets-config/#configrecommended
 
 ### OpenRewrite
 
-1. Change to the branch ´openrewrite-demo´ in the demo project.
+1. Change to the branch ´maintenance-demo´ in the demo project.
 2. Discover available recipes
 ´´´´śhell
 mvn org.openrewrite.maven:rewrite-maven-plugin:discover \
